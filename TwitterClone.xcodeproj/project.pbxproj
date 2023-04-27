@@ -16,6 +16,7 @@
 		946D7C6B29F9A64B00FA3F5C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C6A29F9A64B00FA3F5C /* SearchViewController.swift */; };
 		946D7C6D29F9A65500FA3F5C /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C6C29F9A65500FA3F5C /* NotificationViewController.swift */; };
 		946D7C6F29F9A66000FA3F5C /* DirectMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C6E29F9A66000FA3F5C /* DirectMessagesViewController.swift */; };
+		946D7C7229FB019900FA3F5C /* TweetTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C7129FB019900FA3F5C /* TweetTableTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		946D7C6A29F9A64B00FA3F5C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		946D7C6C29F9A65500FA3F5C /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		946D7C6E29F9A66000FA3F5C /* DirectMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagesViewController.swift; sourceTree = "<group>"; };
+		946D7C7129FB019900FA3F5C /* TweetTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		946D7C5129F9A31500FA3F5C /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				946D7C7029FB012000FA3F5C /* Views */,
 				946D7C6629F9A5F700FA3F5C /* Controllers */,
 				946D7C5229F9A31500FA3F5C /* AppDelegate.swift */,
 				946D7C5429F9A31500FA3F5C /* SceneDelegate.swift */,
@@ -90,6 +93,14 @@
 				946D7C6E29F9A66000FA3F5C /* DirectMessagesViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		946D7C7029FB012000FA3F5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				946D7C7129FB019900FA3F5C /* TweetTableTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				946D7C5729F9A31500FA3F5C /* MainTabViewController.swift in Sources */,
 				946D7C6D29F9A65500FA3F5C /* NotificationViewController.swift in Sources */,
 				946D7C5329F9A31500FA3F5C /* AppDelegate.swift in Sources */,
+				946D7C7229FB019900FA3F5C /* TweetTableTableViewCell.swift in Sources */,
 				946D7C5529F9A31500FA3F5C /* SceneDelegate.swift in Sources */,
 				946D7C6929F9A63800FA3F5C /* HomeViewController.swift in Sources */,
 				946D7C6F29F9A66000FA3F5C /* DirectMessagesViewController.swift in Sources */,
