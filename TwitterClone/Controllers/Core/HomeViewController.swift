@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     private func configureNavigationBar() {
-        let size: CGFloat = 30
+        let size: CGFloat = 25
         let logoImageView = UIImageView(frame: CGRect( x: 0, y: 0, width: size, height: size))
         logoImageView.contentMode = .scaleAspectFill
         logoImageView.image = UIImage(named: "twitterLogo")
@@ -21,6 +21,9 @@ class HomeViewController: UIViewController {
         
         let profileImage = UIImage(systemName: "person")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: profileImage, style: .plain, target: self, action: #selector(didTapProfile))
+        
+        view.backgroundColor = UIColor(named: "twitterBackgroundColor")
+
     }
     
     @objc private func  didTapProfile() {
@@ -39,13 +42,17 @@ class HomeViewController: UIViewController {
         timeLineTableView.delegate = self
         timeLineTableView.dataSource = self
         configureNavigationBar()
-        
-        view.backgroundColor = .systemBlue
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         timeLineTableView.frame = view.frame
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = false
     }
     
 }

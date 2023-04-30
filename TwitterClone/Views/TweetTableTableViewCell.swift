@@ -6,15 +6,12 @@ protocol TweetTableViewCellDelegate: AnyObject {
     func tweetTableViewCellDidTapRetweet()
     func tweetTableViewCellDidTapLike()
     func tweetTableViewCellDidTapShare()
-
 }
 
 
 class TweetTableViewCell: UITableViewCell {
 
     static let identifier = "TweetTableViewCell"
-    
-    
     
     weak var delegate: TweetTableViewCellDelegate?
     
@@ -27,11 +24,11 @@ class TweetTableViewCell: UITableViewCell {
         imageView.layer.cornerRadius = 25
         imageView.layer.masksToBounds = true
         imageView.clipsToBounds = true
-        imageView.image = UIImage(systemName: "person")
-        imageView.backgroundColor = .red
+        imageView.image = UIImage(named: "userImage")
+        imageView.backgroundColor = UIColor(named: "twitterBackgroundColor")
+
         return imageView
     }()
-    
     
     private let displayNameLabel: UILabel = {
         let label = UILabel()
@@ -95,6 +92,7 @@ class TweetTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        backgroundColor = .systemBackground
         contentView.addSubview(avatarImageView)
         contentView.addSubview(displayNameLabel)
         contentView.addSubview(usernameLabel)
