@@ -20,6 +20,7 @@
 		940AB40D2A01B0E20018FE7B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB40C2A01B0E20018FE7B /* OnBoardingViewController.swift */; };
 		940AB40F2A021B120018FE7B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB40E2A021B120018FE7B /* RegisterViewController.swift */; };
 		940AB4122A0220AB0018FE7B /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB4112A0220AB0018FE7B /* RegisterViewModel.swift */; };
+		940AB4152A022DD30018FE7B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB4142A022DD30018FE7B /* AuthManager.swift */; };
 		946D7C5329F9A31500FA3F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C5229F9A31500FA3F5C /* AppDelegate.swift */; };
 		946D7C5529F9A31500FA3F5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C5429F9A31500FA3F5C /* SceneDelegate.swift */; };
 		946D7C5729F9A31500FA3F5C /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C5629F9A31500FA3F5C /* MainTabViewController.swift */; };
@@ -39,6 +40,7 @@
 		940AB40C2A01B0E20018FE7B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		940AB40E2A021B120018FE7B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		940AB4112A0220AB0018FE7B /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		940AB4142A022DD30018FE7B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		946D7C4F29F9A31500FA3F5C /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		946D7C5229F9A31500FA3F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		946D7C5429F9A31500FA3F5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		940AB4132A022DC00018FE7B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				940AB4142A022DD30018FE7B /* AuthManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		946D7C4629F9A31500FA3F5C = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +122,7 @@
 		946D7C5129F9A31500FA3F5C /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				940AB4132A022DC00018FE7B /* Networking */,
 				940AB4102A0220920018FE7B /* ViewModels */,
 				946D7C7029FB012000FA3F5C /* Views */,
 				946D7C6629F9A5F700FA3F5C /* Controllers */,
@@ -249,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				946D7C6B29F9A64B00FA3F5C /* SearchViewController.swift in Sources */,
+				940AB4152A022DD30018FE7B /* AuthManager.swift in Sources */,
 				946D7C5729F9A31500FA3F5C /* MainTabViewController.swift in Sources */,
 				946D7C6D29F9A65500FA3F5C /* NotificationViewController.swift in Sources */,
 				940AB40F2A021B120018FE7B /* RegisterViewController.swift in Sources */,
