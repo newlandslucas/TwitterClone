@@ -19,7 +19,7 @@
 		940AB40A2A01AEEC0018FE7B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 940AB4092A01AEEC0018FE7B /* FirebaseStorageCombine-Community */; };
 		940AB40D2A01B0E20018FE7B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB40C2A01B0E20018FE7B /* OnBoardingViewController.swift */; };
 		940AB40F2A021B120018FE7B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB40E2A021B120018FE7B /* RegisterViewController.swift */; };
-		940AB4122A0220AB0018FE7B /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB4112A0220AB0018FE7B /* RegisterViewModel.swift */; };
+		940AB4122A0220AB0018FE7B /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB4112A0220AB0018FE7B /* AuthenticationViewModel.swift */; };
 		940AB4152A022DD30018FE7B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB4142A022DD30018FE7B /* AuthManager.swift */; };
 		946D7C5329F9A31500FA3F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C5229F9A31500FA3F5C /* AppDelegate.swift */; };
 		946D7C5529F9A31500FA3F5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C5429F9A31500FA3F5C /* SceneDelegate.swift */; };
@@ -33,13 +33,14 @@
 		946D7C7229FB019900FA3F5C /* TweetTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C7129FB019900FA3F5C /* TweetTableTableViewCell.swift */; };
 		946D7C7529FB15DF00FA3F5C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C7429FB15DF00FA3F5C /* ProfileViewController.swift */; };
 		946D7C7729FC6E5D00FA3F5C /* ProfileTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C7629FC6E5D00FA3F5C /* ProfileTableViewHeader.swift */; };
+		94C1884C2A0237C400C01C00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C1884B2A0237C400C01C00 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		940AB3F62A01AD210018FE7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		940AB40C2A01B0E20018FE7B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		940AB40E2A021B120018FE7B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		940AB4112A0220AB0018FE7B /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		940AB4112A0220AB0018FE7B /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		940AB4142A022DD30018FE7B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		946D7C4F29F9A31500FA3F5C /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		946D7C5229F9A31500FA3F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		946D7C7129FB019900FA3F5C /* TweetTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableTableViewCell.swift; sourceTree = "<group>"; };
 		946D7C7429FB15DF00FA3F5C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		946D7C7629FC6E5D00FA3F5C /* ProfileTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewHeader.swift; sourceTree = "<group>"; };
+		94C1884B2A0237C400C01C00 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				940AB40C2A01B0E20018FE7B /* OnBoardingViewController.swift */,
 				940AB40E2A021B120018FE7B /* RegisterViewController.swift */,
+				94C1884B2A0237C400C01C00 /* LoginViewController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -89,7 +92,7 @@
 		940AB4102A0220920018FE7B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				940AB4112A0220AB0018FE7B /* RegisterViewModel.swift */,
+				940AB4112A0220AB0018FE7B /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -262,13 +265,14 @@
 				946D7C6B29F9A64B00FA3F5C /* SearchViewController.swift in Sources */,
 				940AB4152A022DD30018FE7B /* AuthManager.swift in Sources */,
 				946D7C5729F9A31500FA3F5C /* MainTabViewController.swift in Sources */,
+				94C1884C2A0237C400C01C00 /* LoginViewController.swift in Sources */,
 				946D7C6D29F9A65500FA3F5C /* NotificationViewController.swift in Sources */,
 				940AB40F2A021B120018FE7B /* RegisterViewController.swift in Sources */,
 				946D7C5329F9A31500FA3F5C /* AppDelegate.swift in Sources */,
 				946D7C7229FB019900FA3F5C /* TweetTableTableViewCell.swift in Sources */,
 				946D7C5529F9A31500FA3F5C /* SceneDelegate.swift in Sources */,
 				946D7C7529FB15DF00FA3F5C /* ProfileViewController.swift in Sources */,
-				940AB4122A0220AB0018FE7B /* RegisterViewModel.swift in Sources */,
+				940AB4122A0220AB0018FE7B /* AuthenticationViewModel.swift in Sources */,
 				946D7C6929F9A63800FA3F5C /* HomeViewController.swift in Sources */,
 				946D7C7729FC6E5D00FA3F5C /* ProfileTableViewHeader.swift in Sources */,
 				946D7C6F29F9A66000FA3F5C /* DirectMessagesViewController.swift in Sources */,

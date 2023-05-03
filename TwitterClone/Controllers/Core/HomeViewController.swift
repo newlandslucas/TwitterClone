@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         middleView.addSubview(logoImageView)
         navigationItem.titleView = middleView
         
-        let profileImage = UIImage(systemName: "person.circle.fill")
+        let profileImage = UIImage(systemName: "person")
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: profileImage, style: .plain, target: self, action: #selector(didTapProfile))
         
         view.backgroundColor = UIColor(named: "twitterBackgroundColor")
