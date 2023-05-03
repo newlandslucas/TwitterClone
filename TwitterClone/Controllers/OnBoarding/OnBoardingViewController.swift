@@ -9,10 +9,22 @@ import UIKit
 
 class OnBoardingViewController: UIViewController {
     
+    private func configureNavigationBar() {
+        let size: CGFloat = 25
+        let logoImageView = UIImageView(frame: CGRect( x: 0, y: 0, width: size, height: size))
+        logoImageView.contentMode = .scaleAspectFill
+        logoImageView.image = UIImage(named: "twitterLogo")
+        
+        let middleView = UIView(frame: CGRect(x: 0, y: 0, width: size, height: size))
+        middleView.addSubview(logoImageView)
+        navigationItem.titleView = middleView
+
+    }
+        
     private let welcomeLabel: UILabel = {
         let label = UILabel()
-        label.numberOfLines = 0
-        label.text = "See what's happening in the world right now."
+        label.numberOfLines = 3
+        label.text = "See what's\("\n")happening in the\("\n")world right now."
         label.font = .systemFont(ofSize: 32, weight: .heavy)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
@@ -42,9 +54,9 @@ class OnBoardingViewController: UIViewController {
     }()
     
     private let loginButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Login", for: .normal)
+        button.setTitle("Log in", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 14)
         button.tintColor = UIColor(red: 29/255, green: 161/255, blue: 242/255, alpha: 1)
         return button
@@ -58,6 +70,7 @@ class OnBoardingViewController: UIViewController {
         view.addSubview(promptLabel)
         view.addSubview(loginButton)
         
+        configureNavigationBar()
         createAccountButton.addTarget(self, action: #selector(didTapCreateAccount), for: .touchUpInside)
         configureConstraints()
     }
@@ -68,16 +81,17 @@ class OnBoardingViewController: UIViewController {
     }
     
     private func configureConstraints() {
+        
         let welcomeLabelConstraints = [
             welcomeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             welcomeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            welcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 250)
         ]
         
          let createAccountButtonConstraints = [
             createAccountButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            createAccountButton.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 20),
-            createAccountButton.widthAnchor.constraint(equalTo: welcomeLabel.widthAnchor, constant: -20),
+            createAccountButton.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 50),
+            createAccountButton.widthAnchor.constraint(equalTo: welcomeLabel.widthAnchor, constant: -40),
             createAccountButton.heightAnchor.constraint(equalToConstant: 60)
          ]
         
@@ -95,8 +109,6 @@ class OnBoardingViewController: UIViewController {
         NSLayoutConstraint.activate(createAccountButtonConstraints)
         NSLayoutConstraint.activate(promptLabelConstraints)
         NSLayoutConstraint.activate(loginButtonConstraints)
-
-
 
     }
 }
