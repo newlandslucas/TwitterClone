@@ -19,6 +19,7 @@
 		940AB40A2A01AEEC0018FE7B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 940AB4092A01AEEC0018FE7B /* FirebaseStorageCombine-Community */; };
 		940AB40D2A01B0E20018FE7B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB40C2A01B0E20018FE7B /* OnBoardingViewController.swift */; };
 		940AB40F2A021B120018FE7B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB40E2A021B120018FE7B /* RegisterViewController.swift */; };
+		940AB4122A0220AB0018FE7B /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940AB4112A0220AB0018FE7B /* RegisterViewModel.swift */; };
 		946D7C5329F9A31500FA3F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C5229F9A31500FA3F5C /* AppDelegate.swift */; };
 		946D7C5529F9A31500FA3F5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C5429F9A31500FA3F5C /* SceneDelegate.swift */; };
 		946D7C5729F9A31500FA3F5C /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C5629F9A31500FA3F5C /* MainTabViewController.swift */; };
@@ -37,6 +38,7 @@
 		940AB3F62A01AD210018FE7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		940AB40C2A01B0E20018FE7B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		940AB40E2A021B120018FE7B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		940AB4112A0220AB0018FE7B /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		946D7C4F29F9A31500FA3F5C /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		946D7C5229F9A31500FA3F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		946D7C5429F9A31500FA3F5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		940AB4102A0220920018FE7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				940AB4112A0220AB0018FE7B /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		946D7C4629F9A31500FA3F5C = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		946D7C5129F9A31500FA3F5C /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				940AB4102A0220920018FE7B /* ViewModels */,
 				946D7C7029FB012000FA3F5C /* Views */,
 				946D7C6629F9A5F700FA3F5C /* Controllers */,
 				946D7C5229F9A31500FA3F5C /* AppDelegate.swift */,
@@ -245,6 +256,7 @@
 				946D7C7229FB019900FA3F5C /* TweetTableTableViewCell.swift in Sources */,
 				946D7C5529F9A31500FA3F5C /* SceneDelegate.swift in Sources */,
 				946D7C7529FB15DF00FA3F5C /* ProfileViewController.swift in Sources */,
+				940AB4122A0220AB0018FE7B /* RegisterViewModel.swift in Sources */,
 				946D7C6929F9A63800FA3F5C /* HomeViewController.swift in Sources */,
 				946D7C7729FC6E5D00FA3F5C /* ProfileTableViewHeader.swift in Sources */,
 				946D7C6F29F9A66000FA3F5C /* DirectMessagesViewController.swift in Sources */,
