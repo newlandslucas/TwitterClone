@@ -142,8 +142,8 @@ class RegisterViewController: UIViewController {
         ]
         
         let registerButtonConstraints = [
-            registerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            registerButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 35),
+            registerButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            registerButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
             registerButton.widthAnchor.constraint(equalToConstant: 180),
             registerButton.heightAnchor.constraint(equalToConstant: 50)
         ]

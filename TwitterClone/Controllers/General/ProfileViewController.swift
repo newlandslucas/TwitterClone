@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController {
     
     private var isStatusBarHidden: Bool = true
     private var viewModel = ProfileViewViewModel()
+    private var homeViewModel = HomeViewViewModel()
     private var subscriptions: Set<AnyCancellable> = []
     
     private let statusBar: UIView = {
@@ -97,7 +98,6 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TweetTableViewCell.identifier, for: indexPath) as? TweetTableViewCell else {
             return UITableViewCell()
         }
-        
         return cell
     }
     

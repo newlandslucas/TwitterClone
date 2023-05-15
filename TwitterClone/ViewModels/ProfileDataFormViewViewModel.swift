@@ -13,7 +13,7 @@ import FirebaseStorage
 
 final class ProfileDataFormViewViewModel: ObservableObject {
     private var subscriptions: Set<AnyCancellable> = []
-    
+
     @Published var displayName: String?
     @Published var username: String?
     @Published var bio: String?

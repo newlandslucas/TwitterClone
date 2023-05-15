@@ -24,7 +24,6 @@ class TweetTableViewCell: UITableViewCell {
         imageView.layer.cornerRadius = 25
         imageView.layer.masksToBounds = true
         imageView.clipsToBounds = true
-        imageView.image = UIImage(named: "userImage")
         imageView.backgroundColor = UIColor(named: "twitterBackgroundColor")
 
         return imageView
@@ -32,7 +31,6 @@ class TweetTableViewCell: UITableViewCell {
     
     private let displayNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Lucas Newlands"
         label.font = .systemFont(ofSize: 18, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -40,7 +38,6 @@ class TweetTableViewCell: UITableViewCell {
     
     private let usernameLabel: UILabel = {
         let label = UILabel()
-        label.text = "@newlandsl_"
         label.textColor = .secondaryLabel
         label.font = .systemFont(ofSize: 16, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -50,7 +47,6 @@ class TweetTableViewCell: UITableViewCell {
     private let tweetTextContentLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "This is my Mockup tweet, for Twitter Clone App."
         label.numberOfLines = 0
         return label
         
@@ -127,6 +123,13 @@ class TweetTableViewCell: UITableViewCell {
         retweetButton.addTarget(self, action: #selector(didTapRetweet), for: .touchUpInside)
         likeButton.addTarget(self, action: #selector(didTapLike), for: .touchUpInside)
         shareButton.addTarget(self, action: #selector(didTapShare), for: .touchUpInside)
+    }
+    
+    func configureTweet(with displayName: String, username: String, tweetTextContent: String, avatarPath: String) {
+        displayNameLabel.text = displayName
+        usernameLabel.text = "@\(username)"
+        tweetTextContentLabel.text = tweetTextContent
+        avatarImageView.sd_setImage(with: URL(string: avatarPath))
     }
     
     private func configureConstraints() {

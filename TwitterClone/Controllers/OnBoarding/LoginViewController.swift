@@ -137,8 +137,8 @@ class LoginViewController: UIViewController {
         ]
         
         let loginButtonConstraints = [
-            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 35),
+            loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            loginButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
             loginButton.widthAnchor.constraint(equalToConstant: 180),
             loginButton.heightAnchor.constraint(equalToConstant: 50)
         ]
