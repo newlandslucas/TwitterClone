@@ -42,6 +42,9 @@
 		946D7C7729FC6E5D00FA3F5C /* ProfileTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D7C7629FC6E5D00FA3F5C /* ProfileTableViewHeader.swift */; };
 		9491A7862A0D2DBB006F5B81 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491A7852A0D2DBB006F5B81 /* StorageManager.swift */; };
 		94C1884C2A0237C400C01C00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C1884B2A0237C400C01C00 /* LoginViewController.swift */; };
+		94E256E12A11EC8F00407C72 /* TweetComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E256E02A11EC8F00407C72 /* TweetComposeViewController.swift */; };
+		94E256E32A11F20600407C72 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E256E22A11F20600407C72 /* Tweet.swift */; };
+		94E256E52A11F2EA00407C72 /* TweetComposeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E256E42A11F2EA00407C72 /* TweetComposeViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,9 @@
 		946D7C7629FC6E5D00FA3F5C /* ProfileTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewHeader.swift; sourceTree = "<group>"; };
 		9491A7852A0D2DBB006F5B81 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		94C1884B2A0237C400C01C00 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		94E256E02A11EC8F00407C72 /* TweetComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetComposeViewController.swift; sourceTree = "<group>"; };
+		94E256E22A11F20600407C72 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		94E256E42A11F2EA00407C72 /* TweetComposeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetComposeViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 				945537262A0378BF00F9CF7E /* HomeViewViewModel.swift */,
 				9455372A2A03809E00F9CF7E /* ProfileDataFormViewViewModel.swift */,
 				941666232A0ED41A00A7745C /* ProfileViewViewModel.swift */,
+				94E256E42A11F2EA00407C72 /* TweetComposeViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -130,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				945537222A03734400F9CF7E /* TwitterUser.swift */,
+				94E256E22A11F20600407C72 /* Tweet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			children = (
 				946D7C7429FB15DF00FA3F5C /* ProfileViewController.swift */,
 				945537282A037D8D00F9CF7E /* ProfileDataFormViewController.swift */,
+				94E256E02A11EC8F00407C72 /* TweetComposeViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -297,6 +306,7 @@
 			files = (
 				946D7C6B29F9A64B00FA3F5C /* SearchViewController.swift in Sources */,
 				940AB4152A022DD30018FE7B /* AuthManager.swift in Sources */,
+				94E256E12A11EC8F00407C72 /* TweetComposeViewController.swift in Sources */,
 				946D7C5729F9A31500FA3F5C /* MainTabViewController.swift in Sources */,
 				9491A7862A0D2DBB006F5B81 /* StorageManager.swift in Sources */,
 				94C1884C2A0237C400C01C00 /* LoginViewController.swift in Sources */,
@@ -309,7 +319,9 @@
 				946D7C5529F9A31500FA3F5C /* SceneDelegate.swift in Sources */,
 				946D7C7529FB15DF00FA3F5C /* ProfileViewController.swift in Sources */,
 				9455372B2A03809E00F9CF7E /* ProfileDataFormViewViewModel.swift in Sources */,
+				94E256E32A11F20600407C72 /* Tweet.swift in Sources */,
 				940AB4122A0220AB0018FE7B /* AuthenticationViewModel.swift in Sources */,
+				94E256E52A11F2EA00407C72 /* TweetComposeViewViewModel.swift in Sources */,
 				946D7C6929F9A63800FA3F5C /* HomeViewController.swift in Sources */,
 				946D7C7729FC6E5D00FA3F5C /* ProfileTableViewHeader.swift in Sources */,
 				945537292A037D8D00F9CF7E /* ProfileDataFormViewController.swift in Sources */,
