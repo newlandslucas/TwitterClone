@@ -7,6 +7,7 @@
 
 - [Swif](https://www.apple.com/br/swift/)
 - [UIKit](https://developer.apple.com/tutorials/swiftui](https://developer.apple.com/documentation/uikit))
+- [Firebase](https://firebase.google.com/?hl=pt-br)
 
 ## How to run this application? 🚀
 
@@ -15,11 +16,12 @@
   -  `git clone (https://github.com/newlandslucas/TwitterClone.git)`
 
 - Open that folder in your XCode
+- Run & Build Project
+   -  `command + R `
 
 ## Prints 📱
 
-<!-- <img src="/GolLinhasAereas/p1.png" height="600" width="300">  -->
-
+<img src="/TwitterClone/p1.png/" height="600" width="300"> <img src="/TwitterClone/p2.png/" height="600" width="300"> <img src="/TwitterClone/p3.png/" height="600" width="300"> <img src="/TwitterClone/p4.png/" height="600" width="300"> 
 
 ## Author 👨🏻‍💻
 
