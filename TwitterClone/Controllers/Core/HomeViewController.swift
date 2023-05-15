@@ -14,6 +14,21 @@ class HomeViewController: UIViewController {
     private var viewModel = HomeViewViewModel()
     private var subscriptions: Set<AnyCancellable> = []
     
+    private let composeTweetButton: UIButton = {
+        
+        let button = UIButton(type: .system, primaryAction: UIAction { _ in
+            print("Tweet is being preparate")
+        })
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = UIColor(named: "twitterBackgroundColor")
+        button.tintColor = .white
+        let plusSign = UIImage(systemName:  "plus", withConfiguration: UIImage.SymbolConfiguration(pointSize: 18, weight: .bold))
+        button.setImage(plusSign, for: .normal)
+        button.layer.cornerRadius = 30
+        button.clipsToBounds = true
+        return button
+    }()
+    
     private func configureNavigationBar() {
         let size: CGFloat = 25
         let logoImageView = UIImageView(frame: CGRect( x: 0, y: 0, width: size, height: size))
@@ -49,6 +64,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(timeLineTableView)
+        view.addSubview(composeTweetButton)
         timeLineTableView.delegate = self
         timeLineTableView.dataSource = self
         configureNavigationBar()
@@ -59,7 +75,8 @@ class HomeViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         timeLineTableView.frame = view.frame
-    
+        configureConstraints()
+
     }
     
     private func handleAuthentication() {
@@ -91,6 +108,18 @@ class HomeViewController: UIViewController {
             }
         }
         .store(in: &subscriptions)
+    }
+    
+    private func configureConstraints() {
+        let composeTweetButtonConstraints = [
+            composeTweetButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            composeTweetButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
+            composeTweetButton.widthAnchor.constraint(equalToConstant: 60),
+            composeTweetButton.heightAnchor.constraint(equalToConstant: 60),
+            
+        ]
+        
+        NSLayoutConstraint.activate(composeTweetButtonConstraints)
     }
             
     

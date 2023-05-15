@@ -11,7 +11,7 @@ class DirectMessagesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "twitterBackgroundColor")
+        view.backgroundColor = .systemBackground
         // Do any additional setup after loading the view.
     }
     
