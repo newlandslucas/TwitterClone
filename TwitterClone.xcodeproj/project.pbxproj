@@ -155,10 +155,6 @@
 			children = (
 				946D7C5129F9A31500FA3F5C /* TwitterClone */,
 				940AB3F62A01AD210018FE7B /* GoogleService-Info.plist */,
-				94E256E72A12A88700407C72 /* p1.png */,
-				94E256E92A12A88700407C72 /* p2.png */,
-				94E256E62A12A88700407C72 /* p3.png */,
-				94E256E82A12A88700407C72 /* p4.png */,
 				946D7C5029F9A31500FA3F5C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,6 +178,10 @@
 				946D7C5229F9A31500FA3F5C /* AppDelegate.swift */,
 				946D7C5429F9A31500FA3F5C /* SceneDelegate.swift */,
 				946D7C5B29F9A31700FA3F5C /* Assets.xcassets */,
+				94E256E72A12A88700407C72 /* p1.png */,
+				94E256E92A12A88700407C72 /* p2.png */,
+				94E256E62A12A88700407C72 /* p3.png */,
+				94E256E82A12A88700407C72 /* p4.png */,
 				946D7C5D29F9A31700FA3F5C /* LaunchScreen.storyboard */,
 				946D7C6029F9A31700FA3F5C /* Info.plist */,
 			);
