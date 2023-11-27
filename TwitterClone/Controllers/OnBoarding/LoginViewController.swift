@@ -101,6 +101,10 @@ class LoginViewController: UIViewController {
     @objc private func didTapLogin() {
         viewModel.loginUser()
     }
+    
+    @objc private func didTapToDismiss() {
+        view.endEditing(true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,6 +113,7 @@ class LoginViewController: UIViewController {
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapToDismiss)))
         loginButton.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
         configureConstraints()
         bindViews()
